@@ -210,3 +210,17 @@ plt.savefig("toy_example/results/figs/obs4_fut5.jpg")
 # %%
 np.savetxt("toy_example/results/obs4_fut5.csv", mse_val)
 # %%
+obs3_fut5 = np.loadtxt("toy_example/results/obs3_fut5.csv")
+obs4_fut5 = np.loadtxt("toy_example/results/obs4_fut5.csv")
+obs5_fut5 = np.loadtxt("toy_example/results/obs5_fut5.csv")
+ax = plt.axes()
+plt.plot(obs3_fut5,label="3s_hist")
+plt.plot(obs4_fut5,label="4s_hist")
+plt.plot(obs5_fut5,label="5s_hist")
+plt.legend()
+ax.set_xticks([10, 20, 30, 40, 50])
+ax.set_xticklabels(["1", "2", "3","4","5"])
+  
+plt.xlabel("Time (s)")
+plt.ylabel("MSE (meter)")
+plt.show()

@@ -1,4 +1,12 @@
 # -*- coding: utf-8 -*-
+
+#########################################################################
+#we are using the same historic interval but with different len (30,40,50)
+#to predict on the same future interval(50). The translation and rotation 
+# are now preformed based on the 1st observed point, however, in the case 
+# of 30 and 40, they should start from the 20th and 10th point, 
+# respectively
+#########################################################################
 # %%
 from toml import TomlDecodeError
 import torch 
@@ -22,13 +30,9 @@ import math
 import time
 
 #########################################################################
-#we are using the same historic interval but with different len (30,40,50)
-#to predict on the same future interval(50). The translation and rotation 
-# are now preformed based on the 1st observed point, however, in the case 
-# of 30 and 40, they should start from the 20th and 10th point, 
-# respectively
+# obs_len_net controls the model input sequence
+# args["use_ts"] decides whether to use vel_x and vel_y
 #########################################################################
-
 # %%
 obs_len = 50
 target_len = 50

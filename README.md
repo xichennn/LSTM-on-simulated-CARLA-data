@@ -6,9 +6,9 @@ Each segment contains 10s (0-9) trajectory datapoints. We compared using differe
 
 to predict 5s (5-9) trajectory into future.
 <p align="center">
-  <img src="https://github.com/xichennn/LSTM-on-simulated-CARLA-data/blob/stage1_comparison/Figs/result_sub_1.jpg" width="290" title="q1">
-  <img src="https://github.com/xichennn/LSTM-on-simulated-CARLA-data/blob/stage1_comparison/Figs/result_sub_2.jpg" width="290" title="q2">
-  <img src="https://github.com/xichennn/LSTM-on-simulated-CARLA-data/blob/stage1_comparison/Figs/result_sub_3.jpg" width="290" alt="accessibility text">
+  <img src="https://github.com/xichennn/LSTM-on-simulated-CARLA-data/blob/stage1_comparison/Figs/result_sub_1.jpg" width="300" title="q1">
+  <img src="https://github.com/xichennn/LSTM-on-simulated-CARLA-data/blob/stage1_comparison/Figs/result_sub_2.jpg" width="300" title="q2">
+  <img src="https://github.com/xichennn/LSTM-on-simulated-CARLA-data/blob/stage1_comparison/Figs/result_sub_3.jpg" width="300" alt="accessibility text">
 </p>
 Observation: Larger variance among predictions with lane change <br/>
 
